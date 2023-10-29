@@ -1,0 +1,14 @@
+{
+  "name": "knapsack-01",
+  "version": "1.0.0",
+  "description": "I tried to implement the logic for the 0/1 knapsack problem ",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "MoncefME",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
