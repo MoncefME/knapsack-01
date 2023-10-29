@@ -1,5 +1,5 @@
 const { expect, test } = require("@jest/globals");
-const knapsack = require("./knapsack.js");
+const knapsack = require("../src/knapsack.js");
 const {
   testCase00,
   testCase01,

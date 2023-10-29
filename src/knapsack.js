@@ -18,7 +18,7 @@ function knapsack({ capacity, items }) {
     }
   }
   const indexes = [];
-  var c = capacity;
+  let c = capacity;
   for (let i = size; i > 0; i--) {
     if (lookup[i][c] !== lookup[i - 1][c]) {
       indexes.push(i - 1);
