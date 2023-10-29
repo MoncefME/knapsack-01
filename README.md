@@ -21,7 +21,7 @@ The `knapsack` function returns an object with the following properties:
 Here's a basic example of how to use the `knapsack` function:
 
 ```javascript
-const knapsack = require('./knapsack.js');
+const knapsack = require("./knapsack.js");
 const { maxValue, indexes } = knapsack({
   capacity: 10,
   items: [
@@ -32,20 +32,23 @@ const { maxValue, indexes } = knapsack({
   ],
 });
 
-console.log('Max Value:', maxValue);
-console.log('Selected Item Indexes:', indexes);
-
+console.log("Max Value:", maxValue);
+console.log("Selected Item Indexes:", indexes);
 ```
-## Unit Tesging 
+
+## Unit Tesging
+
 <img height="50" src="https://user-images.githubusercontent.com/25181517/187955005-f4ca6f1a-e727-497b-b81b-93fb9726268e.png">
 
-- I used [Jest](https://jestjs.io/)  for unit testing using the [testCases.js](testCases.js) , I got them from [AtCoder](https://atcoder.jp/contests/dp/tasks/dp_d), All test passed in but took too much to execute 
+- I used [Jest](https://jestjs.io/) for unit testing using the [testCases.js](./test/testCases.js) , I got them from [AtCoder](https://atcoder.jp/contests/dp/tasks/dp_d), All test passed in but took too much to execute
+
 #
+
 <img width="256" alt="image" src="https://github.com/MoncefME/knapsack-01/assets/77624873/6f095131-7add-4ad0-8b99-04e070601384">
 #
 
 ## To-Do List:
-- [ ] Implement TypeScript for enhanced type safety.
+
+- [x] Implement TypeScript for enhanced type safety.=> Check the [typescript branch](https://github.com/MoncefME/knapsack-01/tree/typescript)
 - [ ] Transition from `require` to ES6 `import` for modern module management.
 - [ ] Develop the front-end implementation.
-
