@@ -1,5 +1,5 @@
 import { expect, test } from "@jest/globals";
-import knapsack from "../knapsack";
+import knapsack from "../src/knapsack";
 import {
   testCase00,
   testCase01,
