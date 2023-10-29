@@ -1,5 +1,5 @@
-const knapsack = require("./knapsack.js");
-const { testCase00 } = require("./testCases.js");
+import knapsack from "./knapsack";
+import { testCase00 } from "./test/testCases";
 
 const { maxValue, indexes } = knapsack(testCase00);
 console.log(maxValue);

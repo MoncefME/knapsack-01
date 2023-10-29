@@ -1,8 +1,27 @@
-function knapsack({ capacity, items }) {
+type KnapsackItem = {
+  value: number;
+  weight: number;
+};
+
+type KnapsackResult = {
+  maxValue: number;
+  indexes: number[];
+};
+
+function knapsack({
+  capacity,
+  items,
+}: {
+  capacity: number;
+  items: KnapsackItem[];
+}): KnapsackResult {
   const size = items.length;
-  const lookup = Array.from(Array(size + 1), () => new Array(capacity + 1));
+  const lookup: number[][] = new Array(size + 1)
+    .fill([])
+    .map(() => new Array(capacity + 1).fill(0));
   const values = items.map((item) => item.value);
   const weights = items.map((item) => item.weight);
+
   for (let i = 0; i <= size; i++) {
     for (let j = 0; j <= capacity; j++) {
       if (i === 0 || j === 0) {
@@ -17,18 +36,20 @@ function knapsack({ capacity, items }) {
       }
     }
   }
-  const indexes = [];
-  var c = capacity;
+
+  const indexes: number[] = [];
+  let c = capacity;
+
   for (let i = size; i > 0; i--) {
     if (lookup[i][c] !== lookup[i - 1][c]) {
       indexes.push(i - 1);
-      c = c - weights[i - 1];
+      c -= weights[i - 1];
     }
   }
-  indexes.sort(function (a, b) {
-    return a - b;
-  });
-  return { maxValue: lookup[size][capacity], indexes: indexes };
+
+  indexes.sort((a, b) => a - b);
+
+  return { maxValue: lookup[size][capacity], indexes };
 }
 
-module.exports = knapsack;
+export default knapsack;
