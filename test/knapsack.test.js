@@ -1,19 +1,6 @@
-const { expect, test } = require("@jest/globals");
-const knapsack = require("../src/knapsack.js");
-const {
-  testCase00,
-  testCase01,
-  testCase02,
-  testCase03,
-  testCase04,
-  testCase05,
-  testCase06,
-  testCase07,
-  testCase08,
-  testCase09,
-  testCase10,
-  testCase11,
-} = require("./testCases.js");
+// import { expect, test } from "@jest/globals";
+import knapsack from "../src/knapsack.js";
+import { testCase00, testCase01, testCase02, testCase03, testCase04, testCase05, testCase06, testCase07, testCase08, testCase09, testCase10, testCase11 } from "./testCases.js";
 
 test("TestCase 0", () => {
   const { maxValue, indexes } = knapsack(testCase00);

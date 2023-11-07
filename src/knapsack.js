@@ -1,4 +1,4 @@
-function knapsack({ capacity, items }) {
+export function knapsack({ capacity, items }) {
   const size = items.length;
   const lookup = Array.from(Array(size + 1), () => new Array(capacity + 1));
   const values = items.map((item) => item.value);
@@ -31,4 +31,4 @@ function knapsack({ capacity, items }) {
   return { maxValue: lookup[size][capacity], indexes: indexes };
 }
 
-module.exports = knapsack;
+// module.exports = knapsack;

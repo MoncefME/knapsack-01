@@ -1,4 +1,4 @@
-const testCase00 = {
+export const testCase00 = {
   capacity: 8,
   items: [
     { value: 30, weight: 3 },
@@ -9,7 +9,7 @@ const testCase00 = {
   expectedIndexes: [0, 2],
 };
 
-const testCase01 = {
+export const testCase01 = {
   capacity: 5,
   items: [
     { value: 1000000000, weight: 1 },
@@ -22,7 +22,7 @@ const testCase01 = {
   expectedIndexes: [0, 1, 2, 3, 4],
 };
 
-const testCase02 = {
+export const testCase02 = {
   capacity: 15,
   items: [
     { value: 5, weight: 6 },
@@ -36,14 +36,14 @@ const testCase02 = {
   expectedIndexes: [1, 3, 4],
 };
 
-const testCase03 = {
+export const testCase03 = {
   capacity: 100000,
   items: [{ value: 1000000000, weight: 100000 }],
   expectedMaxValue: 1000000000,
   expectedIndexes: [0],
 };
 
-const testCase04 = {
+export const testCase04 = {
   capacity: 100000,
   items: [
     { value: 1000000000, weight: 1000 },
@@ -158,7 +158,7 @@ const testCase04 = {
   ],
 };
 
-const testCase05 = {
+export const testCase05 = {
   capacity: 96403,
   items: [
     { value: 264355233, weight: 11200 },
@@ -266,7 +266,7 @@ const testCase05 = {
   expectedIndexes: [4, 15, 29, 33, 36, 38, 47, 52, 64, 71, 80, 93, 99],
 };
 
-const testCase06 = {
+export const testCase06 = {
   capacity: 98505,
   items: [
     { value: 707432192, weight: 51229 },
@@ -377,7 +377,7 @@ const testCase06 = {
   ],
 };
 
-const testCase07 = {
+export const testCase07 = {
   capacity: 98438,
   items: [
     { value: 950002054, weight: 936 },
@@ -488,7 +488,7 @@ const testCase07 = {
   ],
 };
 
-const testCase08 = {
+export const testCase08 = {
   capacity: 99375,
   items: [
     { value: 372511052, weight: 8167 },
@@ -598,7 +598,7 @@ const testCase08 = {
   ],
 };
 
-const testCase09 = {
+export const testCase09 = {
   capacity: 99471,
   items: [
     { value: 50297598, weight: 14409 },
@@ -709,7 +709,7 @@ const testCase09 = {
   ],
 };
 
-const testCase10 = {
+export const testCase10 = {
   capacity: 99768,
   items: [
     { value: 719391964, weight: 2227 },
@@ -821,7 +821,7 @@ const testCase10 = {
   ],
 };
 
-const testCase11 = {
+export const testCase11 = {
   capacity: 99167,
   items: [
     { value: 618204428, weight: 2674 },
@@ -934,7 +934,7 @@ const testCase11 = {
   ],
 };
 
-const testCase12 = {
+export const testCase12 = {
   capacity: 99768,
   items: [
     { value: 931925303, weight: 3348 },
@@ -1049,17 +1049,17 @@ const testCase12 = {
   ],
 };
 
-module.exports = {
-  testCase00,
-  testCase01,
-  testCase02,
-  testCase03,
-  testCase04,
-  testCase05,
-  testCase06,
-  testCase07,
-  testCase08,
-  testCase09,
-  testCase10,
-  testCase11,
-};
+// module.exports = {
+//   testCase00,
+//   testCase01,
+//   testCase02,
+//   testCase03,
+//   testCase04,
+//   testCase05,
+//   testCase06,
+//   testCase07,
+//   testCase08,
+//   testCase09,
+//   testCase10,
+//   testCase11,
+// };
