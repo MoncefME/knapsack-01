@@ -1,12 +1,4 @@
-type KnapsackItem = {
-  value: number;
-  weight: number;
-};
-
-type KnapsackResult = {
-  maxValue: number;
-  indexes: number[];
-};
+import { KnapsackItem, KnapsackResult } from "./types";
 
 function useKnapsack({
   capacity,

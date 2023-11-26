@@ -12,3 +12,13 @@ export type KnapsackOutputType = {
   maxValue: number;
   indexes: number[];
 };
+
+export type KnapsackItem = {
+  value: number;
+  weight: number;
+};
+
+export type KnapsackResult = {
+  maxValue: number;
+  indexes: number[];
+};
